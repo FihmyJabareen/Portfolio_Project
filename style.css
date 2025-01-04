@@ -190,3 +190,8 @@ a:hover{
   #image6{
     grid-area: image6;
   }
+  .contact-section{
+   width: 100vw;
+   background-color: background-color: #3A3A3A 0% 0% no-repeat padding-box;
+  }
+  
