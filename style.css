@@ -19,10 +19,12 @@ html {
 #header {
   position: fixed;
   width: 100%;
-  z-index: 100;
-  background: rgb(246, 243, 223);
+  /* z-index: 100; */
+  background-color: lightgray;
+  /* background: rgb(246, 243, 223); */
   box-shadow: #3A3A3A 0px 0px 10px;
   top: 0;
+  opacity: 0.8;
 
 }
 
@@ -55,7 +57,7 @@ a:hover {
   color: #6943f3;
   text-decoration: underline;
   font-weight: bold;
-  text-underline-offset: 0.5rem;
+  text-underline-offset: 0.8rem;
 }
 
 .logo {
