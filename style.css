@@ -19,7 +19,7 @@ html {
 #header {
   position: fixed;
   width: 100%;
-  /* z-index: 100; */
+  z-index: 1000;
   background-color: lightgray;
   /* background: rgb(246, 243, 223); */
   box-shadow: #3A3A3A 0px 0px 10px;
