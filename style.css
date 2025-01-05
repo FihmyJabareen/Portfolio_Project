@@ -347,6 +347,9 @@ textarea:focus {
   border: 2px solid green;
   outline: none;
 }
+textarea {
+  resize: none;
+}
 
 .btn {
   padding: 10px 20px;
