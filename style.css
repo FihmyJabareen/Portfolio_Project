@@ -200,25 +200,52 @@ h1 {
   padding-bottom: 50px;
 }
 
+.image-body {
+  width: 330px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* gap: 2rem; */
+  padding-bottom: 30px;
+  padding-top: 30px;
+  text-align: center;
+  transition: 0.5s;
+  box-shadow: #3A3A3A 0px 0px 10px;
+  background-color: white;
+  border-radius: 20px;
+}
+
 .gallery-images {
   display: grid;
-  justify-content: space-around;
+  justify-content: space-evenly;
   grid-template-areas:
     '. image1 image2 image3 .'
     '. image4 image5 image6 .';
-  gap: 2rem;
+  gap: 3rem;
 
 }
 
 .gallery-images img {
-  /* width: 300px;
-    height: 300px; */
+  width: 300px;
+  margin-bottom: 80px;
   border-radius: 20px;
   transition: 0.5s;
 
 }
 
-.gallery-images img:hover {
+.card-link {
+  text-decoration: none;
+  color: black;
+  background-color: violet;
+  border-radius: 10px;
+  padding: 10px 20px;
+  box-shadow: #3A3A3A 0px 0px 10px;
+}
+
+
+
+.gallery-images .image-body:hover {
   transform: scale(1.1);
   box-shadow: #8da09d 0px 0px 15px;
   cursor: pointer;
