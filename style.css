@@ -394,6 +394,7 @@ textarea:focus {
 }
 
 .hamburger {
+  scale: 1.5;
   display: none;
   cursor: pointer;
   padding: 0.5rem;
@@ -405,21 +406,21 @@ textarea:focus {
   border: none;
 }
 
-.hamburger-line {
+/* .hamburger-line {
   display: block;
   width: 25px;
   height: 3px;
   margin: 5px auto;
   transition: all 0.3s ease-in-out;
   background-color: #333;
-}
+} */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 854px) {
   .hamburger {
     display: block;
   }
 
-  .hamburger.active .hamburger-line:nth-child(2) {
+  /* .hamburger.active .hamburger-line:nth-child(2) {
     opacity: 0;
   }
 
@@ -429,7 +430,7 @@ textarea:focus {
 
   .hamburger.active .hamburger-line:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
-  }
+  } */
 
   .nav-links {
     position: fixed;
