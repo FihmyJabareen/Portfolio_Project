@@ -164,7 +164,7 @@ h1 {
 .about button {
   padding: 10px 20px;
   border-radius: 50px;
-  background: #3A3A3A;
+  background: #1AE0EC;
   font-size: 20px;
   transition: 0.5s;
   border: none;
@@ -237,7 +237,7 @@ h1 {
 .card-link {
   text-decoration: none;
   color: black;
-  background-color: violet;
+  background-color: #1AE0EC;
   border-radius: 10px;
   padding: 10px 20px;
   box-shadow: #3A3A3A 0px 0px 10px;
@@ -404,6 +404,34 @@ textarea:focus {
   z-index: 1001;
   background: none;
   border: none;
+}
+
+.bottomline {
+  padding-top: 50px;
+  height: 200px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  background-color: #1AE0EC;
+
+}
+
+.bottomline img {
+  transition: 0.5;
+}
+
+.bottomline .cont {
+  text-align: center;
+}
+
+.bottomline .cont p {
+  padding-top: 30px;
+
+}
+
+.bottomline .cont img:hover {
+  scale: 1.1;
+
 }
 
 /* .hamburger-line {
