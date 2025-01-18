@@ -104,3 +104,38 @@ h1 {
     transform: scale(1.5);
 
 }
+
+.proImage {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.bottomLine {
+    padding-top: 50px;
+    height: 150px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    background-color: #1AE0EC;
+
+}
+
+.bottomLine img {
+    transition: 0.5;
+}
+
+.bottomLine .cont {
+    text-align: center;
+}
+
+.bottomLine .cont p {
+    padding-top: 30px;
+
+}
+
+.bottomLine .cont img:hover {
+    scale: 1.1;
+
+}
