@@ -443,7 +443,7 @@ textarea:focus {
   background-color: #333;
 } */
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 790px) {
   .hamburger {
     display: block;
   }
@@ -522,6 +522,8 @@ textarea:focus {
   }
 
   form {
+    margin: 20px;
+    ;
     width: 90%;
     margin: 0 auto 40px auto;
   }
@@ -529,5 +531,12 @@ textarea:focus {
   #contactphoto {
     width: 90%;
     max-width: 400px;
+  }
+
+  .bottomline {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    height: 100%;
   }
 }
