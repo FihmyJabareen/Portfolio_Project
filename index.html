@@ -9,22 +9,12 @@ l<!DOCTYPE html>
 </head>
 <body>
     <nav id="header">
-    <div class="logo">פהמי ג'בארין<img src="assets/fihmylogo.jpeg" alt="logo"></div>
-    
-    <button class="hamburger">
-        &#8801
-    </button>
-    
-    <div>
-        <ul class="nav-links">
-            <li><a href="#main">ראשי</a></li>
-            <li><a href="#about">אודות</a></li>
-            <li><a href="#gallery">גלריה</a></li>
-            <li><a href="#contact">צור קשר</a></li>
-        </ul>
-    </div>
-</nav>
-    <!-- <nav id="header">
+        <div class="logo">פהמי ג'בארין<img src="assets/fihmylogo.jpeg" alt="logo"></div>
+        
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="hamburger">
+            &#8801
+        </label>
         
         <div>
             <ul class="nav-links">
@@ -34,11 +24,7 @@ l<!DOCTYPE html>
                 <li><a href="#contact">צור קשר</a></li>
             </ul>
         </div>
-        <div class="logo">פהמי ג'בארין<img src="assets/fihmylogo.jpeg" alt="logo"> </div>
-        
-
-        </div>
-    </nav> -->
+    </nav>
     <div class="main" id="main">
         <h1>
             תיק עבודות שלי
@@ -165,23 +151,6 @@ l<!DOCTYPE html>
                 <img src="assets/LOC.svg" alt="Location logo">
                 <p>אלחוסין 9, אום אלפחם</p>
             </div>
-        </div>
-        <script>
-    const hamburger = document.querySelector(".hamburger");
-    const navLinks = document.querySelector(".nav-links");
-    
-    hamburger.addEventListener("click", () => {
-        hamburger.classList.toggle("active");
-        navLinks.classList.toggle("active");
-    });
-    
-    document.querySelectorAll(".nav-links a").forEach(n => n.addEventListener("click", () => {
-        hamburger.classList.remove("active");
-        navLinks.classList.remove("active");
-    }));
-</script>
-        
-    
-    
+        </div>  
 </body>
 </html>

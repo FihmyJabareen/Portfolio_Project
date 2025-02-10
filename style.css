@@ -27,6 +27,9 @@ html {
   opacity: 0.8;
 
 }
+.nav-toggle {
+  display: none;
+}
 
 
 nav,
@@ -392,7 +395,6 @@ textarea:focus {
   cursor: pointer;
   transform: scale(1.1);
 }
-
 .hamburger {
   scale: 1.5;
   display: none;
@@ -405,6 +407,19 @@ textarea:focus {
   background: none;
   border: none;
 }
+
+/* .hamburger {
+  scale: 1.5;
+  display: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  position: fixed;
+  right: 1rem;
+  top: 1rem;
+  z-index: 1001;
+  background: none;
+  border: none;
+} */
 
 .bottomline {
   padding-top: 50px;
@@ -446,6 +461,30 @@ textarea:focus {
 @media screen and (max-width: 790px) {
   .hamburger {
     display: block;
+}
+
+.nav-links {
+    position: fixed;
+    right: -100%;
+    top: 80px;
+    gap: 0;
+    flex-direction: column;
+    background-color: lightgray;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    padding: 20px 0;
+    opacity: 0.95;
+}
+.nav-toggle:checked ~ div .nav-links {
+  right: 0;
+}
+
+.nav-links li {
+  margin: 16px 0;
+}
+  /* .hamburger {
+    display: block;
   }
 
   /* .hamburger.active .hamburger-line:nth-child(2) {
@@ -460,7 +499,7 @@ textarea:focus {
     transform: translateY(-8px) rotate(-45deg);
   } */
 
-  .nav-links {
+  /* .nav-links {
     position: fixed;
     right: -100%;
     top: 80px;
@@ -480,7 +519,7 @@ textarea:focus {
 
   .nav-links li {
     margin: 16px 0;
-  }
+  } */ 
 
   /* Responsive adjustments for other sections */
   .main h1 {
