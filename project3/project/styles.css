@@ -15,13 +15,13 @@ body {
 
 .container {
     display: flex;
-    flex-direction: row-reverse;  /* This reverses the flex direction */
+    flex-direction: row-reverse;
     max-width: 1000px;
     margin: 0 auto;
     background: white;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .image-section {
@@ -60,6 +60,7 @@ input {
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
+
     margin-bottom: 10px;
 }
 
