@@ -8,68 +8,89 @@
 }
 
 body {
-    height: 100vh;
-
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(180deg, #2242FF 0%, #38B6FF 35%, #00FF88 100%);
-    padding: 20px;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    margin: 0;
 }
 
-.container {
-    text-align: center;
-    color: white;
+.background-container {
+    height: 50vh; /* This makes it exactly half of the viewport height */
     width: 100%;
-    max-width: 800px;
+    background: url('project2.png') no-repeat center center;
+    background-size: cover;
+    
 }
 
-h1 {
-    font-size: 5rem;
-    font-family: 'Brush Script MT', cursive;
-    margin-bottom: 1rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-p {
-    font-size: 1.1rem;
-    margin-bottom: 2rem;
-    line-height: 1.5;
+.bottom-section {
+    height: 50vh;
+    background-color: white; /* Or any color you want for the bottom half */
 }
 
 .form-container {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    flex-wrap: wrap;
+    width: 400px;
+    background-color: rgba(34, 34, 34, 0.95);
+    padding: 30px;
+    border-radius: 8px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    transform: translateY(-50%);
+    opacity: 0.9;
 }
 
-input {
-    padding: 0.8rem 1rem;
+.form-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.form-subtitle {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 25px;
+    line-height: 1.4;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
     border: none;
     border-radius: 4px;
-    font-size: 1rem;
-    min-width: 200px;
+    background-color: white;
 }
 
-input[type="email"] {
-    background: rgba(255, 255, 255, 0.9);
-}
-
-button {
-    padding: 0.8rem 2rem;
-    border: 2px solid white;
-    border-radius: 4px;
-    background: transparent;
+.submit-button {
+    background-color: #e94d97;
     color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 4px;
     cursor: pointer;
-    font-size: 1rem;
-    transition: all 0.3s ease;
+    font-size: 16px;
+    float: left;
 }
 
-button:hover {
-    background: white;
-    color: #38B6FF;
+.submit-button:hover {
+    background-color: #d64387;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .form-container {
+        width: 90%;
+        right: 50%;
+        transform: translate(50%, -50%);
+    }
 }
