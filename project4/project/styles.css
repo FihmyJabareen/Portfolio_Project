@@ -7,39 +7,35 @@
     font-family: Heebo;
 }
 
-body {
-    height: 100vh;
-
-
+.background {
+    width: 100%;
+    height: 743px;
+    background-image: url('project4.png');
+    background-size: cover;
+    background-position: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    background: linear-gradient(180deg, #2242FF 0%, #38B6FF 35%, #00FF88 100%);
-    padding: 20px;
-}
-
-.container {
-    text-align: center;
+    align-items: center;
     color: white;
-    width: 100%;
-    max-width: 800px;
 }
 
-h1 {
-    font-size: 5rem;
-    font-family: 'Brush Script MT', cursive;
-    margin-bottom: 1rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+.main-text {
+    color: #d1ff00;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-p {
-    font-size: 1.1rem;
-    margin-bottom: 2rem;
-    line-height: 1.5;
+.sub-text {
+    color: white;
+    text-align: center;
+    max-width: 600px;
+    margin-bottom: 40px;
 }
 
 .form-container {
+    margin-top: 30px;
     display: flex;
     gap: 1rem;
     justify-content: center;
@@ -48,22 +44,23 @@ p {
 
 input {
     padding: 0.8rem 1rem;
-    border: none;
+    border: 2px solid #D3E10E;
     border-radius: 4px;
     font-size: 1rem;
     min-width: 200px;
+    background: #F6F6F6;
 }
 
 input[type="email"] {
-    background: rgba(255, 255, 255, 0.9);
+    background: #F6F6F6;
 }
 
 button {
     padding: 0.8rem 2rem;
-    border: 2px solid white;
+    border: 2px solid #D3E10E;
     border-radius: 4px;
-    background: transparent;
-    color: white;
+    background: #D3E10E;
+    color: black;
     cursor: pointer;
     font-size: 1rem;
     transition: all 0.3s ease;
