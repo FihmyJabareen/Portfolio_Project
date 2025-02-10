@@ -1,21 +1,31 @@
 <!DOCTYPE html>
-<html lang="en" dir="rtl">
+<html lang="he" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ייעוץ חינם</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+   
     <div class="container">
-        <h1>Here & Now</h1>
-        <p>כאן ועכשיו , בוחרים את מתנת ההצטרפות למועדון , וניצור איכם קשר בבהקדם. תודה רבה !!</p>
-        <div class="form-container">
-            <input type="text" placeholder="שם">
-            <input type="email" placeholder="דואל">
-            <button>עדכנו אותי</button>
+        
+        <div class="content">
+            <img src="whatsapp.png" alt="WhatsApp Logo" class="logo">
+            <h1>ייעוץ חינם</h1>
+            <p>לקבלת ייעוץ חינם, מוזמנים להשאיר פרטים  <br>ונחזור אליכם עם מענה</p>
+            <form>
+                <div class="form-group">
+                    <input type="text" placeholder="שם מלא" required>
+                    <input type="tel" placeholder="מספר טלפון" required>
+                </div>
+                <textarea class="message" placeholder="הודעה"></textarea><br>
+                <button type="submit" class="submit-btn">שליחה</button>
+            </form>
+        </div>
+        <div class="image-container">
+            <img src="project5.png" alt="Mobile Messaging" class="mobile-image">
         </div>
     </div>
-    
 </body>
 </html>

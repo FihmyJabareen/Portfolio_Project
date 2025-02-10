@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;
@@ -8,68 +9,102 @@
 }
 
 body {
-    height: 100vh;
-
-
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    background: linear-gradient(180deg, #2242FF 0%, #38B6FF 35%, #00FF88 100%);
-    padding: 20px;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: white;
 }
 
 .container {
-    text-align: center;
-    color: white;
-    width: 100%;
-    max-width: 800px;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 80%;
+    /* max-width: 1200px; */
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.content {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #FDBD03;
+    ;
+}
+
+.content p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #020253;
+}
+
+.logo {
+    width: 60px;
+    margin-bottom: 20px;
+    margin-right: ;
+    background: #FDBD03;
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 90%;
 }
 
 h1 {
-    font-size: 5rem;
-    font-family: 'Brush Script MT', cursive;
-    margin-bottom: 1rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    color: #FDBD03;
+    margin-bottom: 20px;
+    font-size: 66px;
 }
 
-p {
-    font-size: 1.1rem;
-    margin-bottom: 2rem;
-    line-height: 1.5;
-}
-
-.form-container {
+.form-group {
     display: flex;
-    gap: 1rem;
-    justify-content: center;
-    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
 }
 
-input {
-    padding: 0.8rem 1rem;
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-bottom: 4px solid #FDBD03;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #E5EEFF;
+}
+
+.message {
+    width: 100%;
+    height: 142px;
+    background-color: #E5EEFF;
+    border-bottom: 4px solid #FDBD03;
+    margin-bottom: 20px;
+}
+
+.submit-btn {
+    width: 20%;
+    padding: 12px;
+    background-color: #FDBD03;
+    color: black;
     border: none;
-    border-radius: 4px;
-    font-size: 1rem;
-    min-width: 200px;
-}
-
-input[type="email"] {
-    background: rgba(255, 255, 255, 0.9);
-}
-
-button {
-    padding: 0.8rem 2rem;
-    border: 2px solid white;
-    border-radius: 4px;
-    background: transparent;
-    color: white;
+    border-radius: 5px;
     cursor: pointer;
-    font-size: 1rem;
-    transition: all 0.3s ease;
+    font-weight: bold;
 }
 
-button:hover {
-    background: white;
-    color: #38B6FF;
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+}
+
+.mobile-image {
+    max-width: 300px;
+    width: 100%;
 }
