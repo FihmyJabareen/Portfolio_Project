@@ -56,6 +56,7 @@ nav {
     justify-content: center;
     /* background: radial-gradient(#64ace6, #91e5d0); */
     background-image: url(..//assets/bgimage.jpg);
+
     box-shadow: #3A3A3A 0px 0px 10px;
 
 }
@@ -106,8 +107,8 @@ h1 {
     gap: 8rem;
     /* background-image: url(/assets/progimage.jpg); */
     /* margin-top: 50px; */
-    padding-bottom: 10px;
-    padding-top: 10px;
+    padding-bottom: 30px;
+    padding-top: 30px;
     /* border-bottom: 1px solid #3A3A3A; */
     box-shadow: #3A3A3A 0px 0px 10px;
     background-color: white;
