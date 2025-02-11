@@ -27,6 +27,7 @@ html {
   opacity: 0.8;
 
 }
+
 .nav-toggle {
   display: none;
 }
@@ -315,7 +316,7 @@ form {
   justify-content: center;
   align-items: right;
   gap: 2rem;
-  
+
   padding-right: 30px;
   border: 5px solid white;
   width: 30%;
@@ -349,7 +350,7 @@ input {
 label {
   font-size: 1.5em;
   color: white;
-  
+
   margin-left: 30px;
 }
 
@@ -395,6 +396,7 @@ textarea:focus {
   cursor: pointer;
   transform: scale(1.1);
 }
+
 .hamburger {
   scale: 1.5;
   display: none;
@@ -440,32 +442,96 @@ textarea:focus {
 
 
 
-@media screen and (max-width: 790px) {
-  .hamburger {
-    display: block;
+@media (max-width: 1024px) {
+
+
+  .nav-links li {
+    margin: 16px 0;
+  }
+
+  .main h1 {
+    font-size: 40px;
+    padding-top: 120px;
+  }
+
+  .codinglang {
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+
+  .about p {
+    width: 90%;
+    padding: 0 20px;
+  }
+
+  .gallery-images {
+    grid-template-areas:
+
+      'image1 image2'
+      'image3 image4'
+      'image5 image6';
+    padding: 20px;
+  }
+
+  .image-body {
+    width: 100%;
+    max-width: 330px;
+    margin: 0 auto;
+  }
+
+  .contact {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  form {
+    margin: 20px;
+    ;
+    width: 90%;
+    margin: 0 auto 40px auto;
+  }
+
+  #contactphoto {
+    width: 30%;
+
+  }
+
+  .bottomline {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    height: 100%;
+  }
 }
 
-.nav-links {
+@media (max-width: 600px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
     position: fixed;
     right: -100%;
     top: 80px;
     gap: 0;
     flex-direction: column;
     background-color: lightgray;
-    width: 100%;
+    width: 100vw;
     text-align: center;
     transition: 0.3s;
     padding: 20px 0;
     opacity: 0.95;
-}
-.nav-toggle:checked ~ div .nav-links {
-  right: 0;
-}
+  }
 
-.nav-links li {
-  margin: 16px 0;
-}
-  
+  .nav-toggle:checked~div .nav-links {
+    right: 0;
+  }
+
+  .nav-links li {
+    margin: 16px 0;
+  }
+
   .main h1 {
     font-size: 40px;
     padding-top: 120px;
@@ -490,6 +556,7 @@ textarea:focus {
       'image4'
       'image5'
       'image6';
+
     padding: 20px;
   }
 
