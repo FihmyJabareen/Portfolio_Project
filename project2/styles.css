@@ -211,35 +211,3 @@ h1 {
         scale: 0.7;
     }
 }
-
-/* @media (max-width: 600px) {
-    .logo {
-        font-size: 1.2rem;
-    }
-
-    h1 {
-        font-size: 40px;
-        padding-top: 80px;
-    }
-
-    .links a {
-        font-size: 14px;
-        padding: 6px;
-    }
-
-    .codinglang img {
-        width: 60px;
-        height: 60px;
-    }
-
-    .bottomLine .cont p {
-        padding-top: 10px;
-        font-size: smaller;
-    }
-
-    .bottomLine .cont img {
-        scale: 0.7;
-    }
-
-
-} */
