@@ -403,14 +403,13 @@ textarea:focus {
   cursor: pointer;
   padding: 0.5rem;
   position: fixed;
-  right: 1rem;
-  top: 1rem;
+  right: 0.5rem;
+  top: 0.1rem;
   z-index: 1001;
   background: none;
   border: none;
+  color: #17181b;
 }
-
-
 
 .bottomline {
   padding-top: 50px;

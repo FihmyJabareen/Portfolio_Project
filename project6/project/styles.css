@@ -14,8 +14,6 @@ body {
 }
 
 .container {
-
-
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
