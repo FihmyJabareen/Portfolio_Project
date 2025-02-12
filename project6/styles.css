@@ -39,6 +39,7 @@ nav {
 }
 
 .logo {
+    text-decoration: none;
     margin: 0 auto;
     font-size: 2rem;
     font-weight: 800;
