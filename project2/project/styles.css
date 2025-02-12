@@ -14,16 +14,16 @@ body {
 }
 
 .background-container {
-    height: 50vh; /* This makes it exactly half of the viewport height */
+    height: 50vh;
     width: 100%;
     background: url('project2.png') no-repeat center center;
     background-size: cover;
-    
+
 }
 
 .bottom-section {
     height: 50vh;
-    background-color: white; /* Or any color you want for the bottom half */
+    background-color: white;
 }
 
 .form-container {
@@ -86,7 +86,6 @@ body {
     background-color: #d64387;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
     .form-container {
         width: 90%;
