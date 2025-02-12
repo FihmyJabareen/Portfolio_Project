@@ -9,67 +9,162 @@
 
 body {
     height: 100vh;
-
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(180deg, #2242FF 0%, #38B6FF 35%, #00FF88 100%);
+    background-color: #f0f4f8;
     padding: 20px;
 }
 
 .container {
+
+
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    gap: 15px;
+    padding: 50px;
+    grid-template-areas:
+        ". title title img2 img1 ."
+        ". title title img8 img14 ."
+        ". img4 img7 img6 img5 . "
+        ". img10 img11 form form ."
+        ". img9 img12 form form ."
+        ". img3 img13 form form ."
+        ". . . . . .";
+}
+
+.title {
+    grid-area: title;
+    background-color: #1a237e;
+    color: #4dd0e1;
+    padding: 20px;
     text-align: center;
-    color: white;
-    width: 100%;
-    max-width: 800px;
-}
-
-h1 {
-    font-size: 5rem;
-    font-family: 'Brush Script MT', cursive;
-    margin-bottom: 1rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-p {
-    font-size: 1.1rem;
-    margin-bottom: 2rem;
-    line-height: 1.5;
-}
-
-.form-container {
+    border-radius: 8px;
     display: flex;
-    gap: 1rem;
+    flex-direction: column;
     justify-content: center;
-    flex-wrap: wrap;
 }
 
-input {
-    padding: 0.8rem 1rem;
+.form-section {
+    grid-area: form;
+    display: flex;
+    flex-direction: column;
+    background-color: #9c27b0;
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+    justify-content: space-around
+}
+
+.form-section h2 {
+    margin-bottom: 15px;
+    font-size: 45px;
+    text-align: center;
+}
+
+.form-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.form-section input,
+.form-section textarea {
+    padding: 10px;
     border: none;
     border-radius: 4px;
-    font-size: 1rem;
-    min-width: 200px;
+    width: 100%;
 }
 
-input[type="email"] {
-    background: rgba(255, 255, 255, 0.9);
-}
-
-button {
-    padding: 0.8rem 2rem;
-    border: 2px solid white;
+.form-section button {
+    padding: 10px;
+    background-color: #4dd0e1;
+    border: none;
     border-radius: 4px;
-    background: transparent;
     color: white;
     cursor: pointer;
-    font-size: 1rem;
-    transition: all 0.3s ease;
+    font-weight: bold;
 }
 
-button:hover {
-    background: white;
-    color: #38B6FF;
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.img1 {
+    grid-area: img1
+}
+
+.img2 {
+    grid-area: img2
+}
+
+.img3 {
+    grid-area: img3
+}
+
+.img4 {
+    grid-area: img4
+}
+
+.img5 {
+    grid-area: img5
+}
+
+.img6 {
+    grid-area: img6;
+}
+
+.img7 {
+    grid-area: img7;
+}
+
+.img8 {
+    grid-area: img8;
+}
+
+.img9 {
+    grid-area: img9;
+}
+
+.img10 {
+    grid-area: img10;
+}
+
+.img11 {
+    grid-area: img11;
+}
+
+.img12 {
+    grid-area: img12;
+}
+
+.img13 {
+    grid-area: img13;
+}
+
+.img14 {
+    grid-area: img14;
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "title  title"
+            "img1   img2"
+            "img3   img4"
+            "img5   img6"
+            "img7   img8"
+            "img9   img10"
+            "img11  img12"
+            "img13  img14"
+            "form   form";
+    }
+
+    .form-section {
+        padding: 20px;
+
+    }
 }
