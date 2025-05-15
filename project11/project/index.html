@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BINGO !!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>BINGO !</h1>
+    
+    <div class="game-container">
+        <div class="controls">
+            <button id="new-card">New Card</button>
+            <button id="draw-number">Draw Number</button>
+            <button id="reset-game">Reset Game</button>
+        </div>
+        
+        <div class="bingo-card" id="bingo-card">
+            <div class="header">BINGO</div>
+            <div class="letter">B</div>
+            <div class="letter">I</div>
+            <div class="letter">N</div>
+            <div class="letter">G</div>
+            <div class="letter">O</div>
+        </div>
+        
+        <div class="number-drawer">
+            <div class="drawn-number" id="current-number">--</div>
+            <div id="drawn-numbers" class="drawn-numbers"></div>
+        </div>
+        
+        <div class="win-message" id="win-message">BINGO! You've won!</div>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
