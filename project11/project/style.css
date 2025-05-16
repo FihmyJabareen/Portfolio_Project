@@ -130,3 +130,48 @@ button:hover {
     text-align: center;
     display: none;
 }
+
+/* הוסף בסוף הקובץ */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    direction: rtl;
+    text-align: right;
+}
+
+.close {
+    color: #aaa;
+    float: left;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: black;
+}
+
+#instructions-btn {
+    background-color: #ff9800;
+    margin-bottom: 20px;
+}
+
+#instructions-btn:hover {
+    background-color: #e68a00;
+}

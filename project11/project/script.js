@@ -5,6 +5,9 @@ const resetGameButton = document.getElementById('reset-game');
 const currentNumberElement = document.getElementById('current-number');
 const drawnNumbersElement = document.getElementById('drawn-numbers');
 const winMessageElement = document.getElementById('win-message');
+const instructionsBtn = document.getElementById('instructions-btn');
+const modal = document.getElementById('instructions-modal');
+const span = document.getElementsByClassName('close')[0];
 
 let drawnNumbers = [];
 let hasWon = false;
@@ -208,4 +211,17 @@ newCardButton.addEventListener('click', generateBingoCard);
 drawNumberButton.addEventListener('click', drawNumber);
 resetGameButton.addEventListener('click', initGame);
 
+instructionsBtn.addEventListener('click', () => {
+    modal.style.display = 'block';
+});
+
+span.addEventListener('click', () => {
+    modal.style.display = 'none';
+});
+
+window.addEventListener('click', (event) => {
+    if (event.target == modal) {
+        modal.style.display = 'none';
+    }
+});
 initGame();

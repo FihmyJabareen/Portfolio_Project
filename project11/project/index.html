@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>BINGO !</h1>
-    
+    <button id="instructions-btn">הוראות משחק</button>
     <div class="game-container">
         <div class="controls">
             <button id="new-card">כרטיס חדש</button>
@@ -31,6 +31,22 @@
         </div>
         
         <div class="win-message" id="win-message">בינגו !! זכית</div>
+        
+        <div id="instructions-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>הוראות משחק בינגו</h2>
+                <ol>
+                    <li>לחץ על "כרטיס חדש" כדי ליצור כרטיס בינגו אקראי.</li>
+                    <li>לחץ על "שלוף מספר" כדי להפיק מספר אקראי חדש.</li>
+                    <li>אם המספר שנשלף מופיע בכרטיס שלך, לחץ עליו כדי לסמן אותו.</li>
+                    <li>ניתן גם לסמן מספרים ידנית בלחיצה עליהם.</li>
+                    <li>המטרה: להשלים שורה, טור או אלכסון של מספרים מסומנים.</li>
+                    <li>המשבצת האמצעית מסומנת אוטומטית כ"FREE".</li>
+                    <li>לחץ על "התחל מחדש" כדי לאפס את המשחק.</li>
+                </ol>
+            </div>
+        </div>
     </div>
     <script src="script.js"></script>
     
