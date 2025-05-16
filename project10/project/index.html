@@ -1,32 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="he" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Calendar</title>
+    <title>לוח שנה אינטראקטיבי</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="calendar-container">
         <div class="calendar-header">
-            <button class="nav-button" id="prev-month">&lt;</button>
+            <button class="nav-button" id="prev-month">❮</button>
             <div class="month-year" id="month-year"></div>
-            <button class="nav-button" id="next-month">&gt;</button>
+            <button class="nav-button" id="next-month">❯</button>
         </div>
         
         <div class="weekdays">
-            <div class="weekday">Sun</div>
-            <div class="weekday">Mon</div>
-            <div class="weekday">Tue</div>
-            <div class="weekday">Wed</div>
-            <div class="weekday">Thu</div>
-            <div class="weekday">Fri</div>
-            <div class="weekday">Sat</div>
+            <div class="weekday">א'</div>
+            <div class="weekday">ב'</div>
+            <div class="weekday">ג'</div>
+            <div class="weekday">ד'</div>
+            <div class="weekday">ה'</div>
+            <div class="weekday">ו'</div>
+            <div class="weekday">ש'</div>
         </div>
         
         <div class="days" id="calendar-days"></div>
         
-        <div class="selected-date" id="selected-date">No date selected</div>
+        <div class="selected-date" id="selected-date">לא נבחר תאריך</div>
+        
+        <div class="event-section" id="event-section" style="display: none;">
+            <h3>אירועים/הערות</h3>
+            <ul id="event-list"></ul>
+            <textarea id="event-input" placeholder="הוסף אירוע או הערה..."></textarea>
+            <button id="add-event">הוסף</button>
+            <button id="clear-events">נקה הכל</button>
+        </div>
     </div>
 
     <script src="script.js"></script>

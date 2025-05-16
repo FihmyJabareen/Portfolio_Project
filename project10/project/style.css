@@ -14,6 +14,7 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     width: 350px;
     padding: 20px;
+    direction: rtl;
 }
 
 .calendar-header {
@@ -66,6 +67,7 @@ body {
     justify-content: center;
     cursor: pointer;
     border-radius: 50%;
+    position: relative;
 }
 
 .day:hover {
@@ -86,8 +88,77 @@ body {
     color: #bbb;
 }
 
+.day.has-event::after {
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    width: 6px;
+    height: 6px;
+    background-color: #ea4335;
+    border-radius: 50%;
+}
+
 .selected-date {
     margin-top: 20px;
     text-align: center;
     font-weight: bold;
+}
+
+.event-section {
+    margin-top: 20px;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+}
+
+.event-section h3 {
+    margin-top: 0;
+    text-align: center;
+}
+
+#event-input {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: vertical;
+    min-height: 60px;
+}
+
+#add-event,
+#clear-events {
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+#add-event:hover,
+#clear-events:hover {
+    background-color: #e0e0e0;
+}
+
+#event-list {
+    list-style: none;
+    padding: 0;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+#event-list li {
+    padding: 8px;
+    background-color: #f9f9f9;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#event-list li button {
+    background: none;
+    border: none;
+    color: #ea4335;
+    cursor: pointer;
 }
