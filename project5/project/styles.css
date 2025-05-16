@@ -107,3 +107,68 @@ h1 {
     max-width: 300px;
     width: 100%;
 }
+
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+        min-height: auto;
+    }
+
+    .container {
+        width: 100%;
+        flex-direction: column;
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    .content {
+        padding: 20px;
+        order: 2;
+    }
+
+    .image-container {
+        order: 1;
+        padding: 20px 0;
+    }
+
+    .logo {
+        margin-right: auto;
+        margin-bottom: 15px;
+    }
+
+    h1 {
+        font-size: 36px;
+        margin-bottom: 15px;
+    }
+
+    .content p {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .form-group {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .form-group input,
+    .message,
+    .submit-btn {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .mobile-image {
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    .content p {
+        font-size: 14px;
+    }
+}
