@@ -147,22 +147,47 @@ img {
 }
 
 @media (max-width: 768px) {
-    .container {
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-            "title  title"
-            "img1   img2"
-            "img3   img4"
-            "img5   img6"
-            "img7   img8"
-            "img9   img10"
-            "img11  img12"
-            "img13  img14"
-            "form   form";
+    body {
+        padding: 10px;
     }
 
-    .form-section {
-        padding: 20px;
+    .container {
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "title title"
+            "img1 img2"
+            "img3 img4"
+            "img5 img6"
+            "img7 img8"
+            "img9 img10"
+            "img11 img12"
+            "img13 img14"
+            "form form";
+        gap: 10px;
+        padding: 10px;
+    }
 
+    .title,
+    .form-section {
+        grid-column: span 2;
+        padding: 15px;
+    }
+
+    .form-section form {
+        gap: 15px;
+    }
+
+    .form-section h2 {
+        font-size: 30px;
+    }
+
+    img {
+        border-radius: 4px;
+        aspect-ratio: 1;
+    }
+
+    [class^="img"] {
+        grid-column: span 1;
     }
 }
