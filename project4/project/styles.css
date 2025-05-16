@@ -70,3 +70,16 @@ button:hover {
     background: white;
     color: #38B6FF;
 }
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button {
+        width: 100%;
+        max-width: 200px;
+    }
+}
