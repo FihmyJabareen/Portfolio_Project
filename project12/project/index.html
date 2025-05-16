@@ -1,35 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>To Do List</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>מזג אוויר בישראל</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-</select>
-
-    
-    <div class="container">
-        <h1>To Do List</h1>
-        <input id="inputField" type="text" placeholder="Add a Task"><button id="addToDo"><span id="addButtonText">Add</span></button>
-        <div class="to-dos" id="toDoContainer"></div>
+  <div class="card">
+    <h1>מזג אוויר בישראל</h1>
+    <div>
+      <select id="city">
+        <option value="Jerusalem">ירושלים</option>
+        <option value="Tel Aviv">תל אביב</option>
+        <option value="Haifa">חיפה</option>
+        <option value="Eilat">אילת</option>
+        <option value="Umm El Fahm">אום אל פחם</option>
+        <option value="Beersheba">באר שבע</option>
+        <option value="Nazareth">נצרת</option>
+        <option value="Afula">עפולה</option>
+        <option value="Tiberias">טבריה</option>
+        <option value="Ashdod">אשדוד</option>
+        <option value="Netanya">נתניה</option>
+        <option value="Rishon Lezion">ראשון לציון</option>
+        
+      </select>
+      <button onclick="getWeather()">בדוק</button>
     </div>
-    <button id="clearButton">Clear All</button>
-    </div>
-    <div id="instructions">
-        <p>Click on a task to mark it as completed</p>
-        <p>Click on the trash icon to delete a task</p>
-        <select id="languageSelect">
-    <option value="en">English</option>
-    <option value="ar">عربي</option>
-    <option value="he">עברית</option>
-</select>
-    </div>
-    <footer>
-        © 2025 Fihmy Jabareen.
-    </footer>
-    <script src="script.js"></script>
+    <div id="result">בחר עיר ולחץ על כפתור</div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
