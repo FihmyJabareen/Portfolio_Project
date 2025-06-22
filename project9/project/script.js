@@ -15,7 +15,7 @@ let gameActive = true;
 function moveBasket(direction) {
     if (!gameActive) return;
     const currentLeft = parseInt(basket.style.left) || 250;
-    let newLeft = currentLeft + direction * basketSpeed;
+    let newLeft = currentLeft + direction *basketSpeed;
 
 
     if (newLeft < 0) {
